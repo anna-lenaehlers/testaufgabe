@@ -1,0 +1,125 @@
+
+$font-color: #fff;
+
+@keyframes entrancefromleft
+{
+  0% {-webkit-transform: translateX(-600px); opacity: 0%;}
+  90% {-webkit-transform: translateX(20px);}
+  100% {-webkit-transform: translateX(0px); opacity: 100%;}
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(244, 68, 46, 0.3), rgba(244, 68, 46, 0.3)), url("../img/cute_puppy.jpg") no-repeat fixed center;
+  background-size: cover;
+  margin: 50px 0 0;
+  height: 100%;
+
+  a:hover {
+
+
+  }
+
+  .logo-space i {
+    color: $font-color;
+  }
+
+  main, section {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: $font-color;
+
+    h1 {
+      font-size: 8em;
+      /*color: $font-color;*/
+    }
+
+    h2 {
+      font-size: 3em;
+      /*color: $font-color;*/
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: $font-color;
+    font-size: 2em;
+
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+    ul li {
+      padding: 0 20px;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $font-color;
+
+        &:hover {
+          border-bottom: 3px solid;
+        }
+      }
+    }
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  .social-links {
+    position: absolute;
+    top: 63%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: entrancefromleft .6s ease-in-out;
+    animation-fill-mode: both;
+
+    i {
+      color: $font-color;
+      border: 3px solid rgba(255, 255, 255,.7);
+      padding: 30px;
+      border-radius: 100px;
+      margin: 0 15px;
+    }
+    .fa-facebook-f {
+      padding: 30px 37px;
+
+      &:hover {
+        background: linear-gradient(#4267B2, #898F9C);
+      }
+    }
+
+    .fa-tiktok {
+      padding: 30px 34px;
+      background: transparent;
+
+      &:hover {
+        background: linear-gradient(#25F4EE, #FE2C55);
+      }
+    }
+
+    .fa-github:hover {
+      background: linear-gradient(#4078c0, #6e5494);
+    }
+    .fa-twitter:hover {
+      background: linear-gradient(#1DA1F2, #657786);
+    }
+  }
+}
+
