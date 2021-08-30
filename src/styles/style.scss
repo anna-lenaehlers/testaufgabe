@@ -18,11 +18,6 @@ body {
   margin: 50px 0 0;
   height: 100%;
 
-  a:hover {
-
-
-  }
-
   .logo-space i {
     color: $font-color;
   }
@@ -122,4 +117,45 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 450px) {
+
+}
+
+@media screen and (min-width:720px) {
+
+  body {
+    main {
+      h1 {
+        font-size: 6em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+    }
+    .social-links {
+      top: 65%;
+
+      i {
+        padding: 20px;
+        border-radius: 100px;
+        margin: 0 15px;
+      }
+      .fa-facebook-f {
+        padding: 20px 28px;
+      }
+
+      .fa-tiktok {
+        padding: 20px 23px;
+        background: transparent;
+      }
+    }
+
+    footer {
+      font-size: 1.5em;
+    }
+  }
+
+}
+
 
