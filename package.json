@@ -1,0 +1,17 @@
+{
+  "name": "testaufgabe",
+  "version": "1.0.0",
+  "description": "This package is used to check my frontend skills",
+  "main": "",
+  "scripts": {
+    "scss": "sass --watch ./src/styles/style.scss ./src/styles/style.css"
+  },
+  "author": "Anna-Lena Ehlers",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "mustache": "^4.2.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.38.0"
+  }
+}
